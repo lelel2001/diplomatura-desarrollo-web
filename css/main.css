@@ -1,0 +1,144 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos generales*/
+body{
+    background: #070708;
+    color: whitesmoke;
+}
+
+/*estilos de main*/
+main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:3rem 1rem;
+}
+
+main h1{
+    font-size: 2.5rem;
+}
+
+main p{
+    font-size: 1.3rem;
+}
+
+main .button-container .button, main .button-container .button-dos{
+border-radius: 100px;
+padding: 0.8rem 3rem;
+font-weight: bold;
+}
+
+main .button-container .button{
+    background-color: #008870;
+}
+
+main .button-container .button-dos{
+    margin-top: 1.2rem;
+    border: 2px solid whitesmoke;
+}
+
+/*estilos section*/
+section{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.3rem;
+}
+
+section .div-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+section .card-section h2{
+    font-weight: bold;
+}
+
+section .card-section{
+    background-color: #1f1f23;
+    border: 1px solid #37373a;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+section .card-section img{
+    width: 20%;
+    margin-bottom: 1rem;
+}
+
+/*estilos section dos*/
+
+.section-dos img{
+    border-radius: 20px;
+}
+
+
+/* mq tablet*/
+@media screen and (min-width: 768px){
+    main .button-container{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .button-container .button-dos{
+        margin-top: 0;
+    }
+
+    .section-uno{
+        display: grid;
+        grid-template-columns: ;
+        grid-template-rows: ;
+        grid-template-areas:
+        "area-uno area-uno"
+        "area-dos area-tres"
+        "area-cuatro area-cinco";
+    }
+
+    .section-uno .area-uno{
+        grid-area: area-uno;
+    }
+
+    .section-uno .area-dos{
+        grid-area: area-dos;
+    }
+
+    .section-uno .area-tres{
+        grid-area: area-tres;
+    }
+
+    .section-uno .area-cuatro{
+        grid-area: area-cuatro;
+    }
+
+    .section-uno .area-cinco{
+        grid-area: area-cinco;
+    }
+}
+
+/* mq desktop */
+@media screen and (min-width: 1024px){
+    .section-uno{
+        padding: 10%;
+        grid-template-areas:
+        "area-uno area-uno area-uno area-uno"
+        "area-dos area-tres area-cuatro area-cinco";
+        gap: 2rem;
+    }
+    .section-uno .area-uno{
+    margin-bottom: 3rem;
+    }
+    .section-uno .area-uno img{
+        width: 70%;
+    }
+}
